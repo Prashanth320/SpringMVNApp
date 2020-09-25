@@ -11,6 +11,7 @@ public class Application {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
+		System.out.println("Run method is started");
 		User bean = context.getBean(User.class);
 		bean.getName(103);
 	}
